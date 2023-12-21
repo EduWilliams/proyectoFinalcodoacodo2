@@ -1,0 +1,85 @@
+
+<html xmlns:th="htpp//www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+          crossorigin="anonymous">
+          <link rel="stylesheet" href="Est.css">
+    </head>
+    <body>
+                <div>
+    <nav class="gris">
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1">
+        <img id="logo"  src="Logo.png" alt="">
+    </div>
+    <div class="col-2" id="white"> Conferencia Bs As</div>
+    
+    <div class="col-8">
+    <ul  class="menu">
+   
+        <li><p>La conferencia</p></li>
+        
+        <li><a href="/Comprarticket" class="blanco">Cargar Ticket</a></li>
+        <li><a href="/" class="blanco">Eliminar Ticket</a></li>
+        <li><a href="/ListadoOradores"class="blanco" >Ver Oradores</a></li>
+        <li><a href="/" class="btn active" id="blanco" >Salir</a></li>
+        
+        </ul>
+    </div>
+     </div>
+             </div>
+         </div>
+        
+        
+       <section class="Listar">
+              <div class="cont">
+            <div class="row">
+                <div class="col-1"></div>
+                   <div class="col-10">
+                       <div id="Lista">Listado de  tickets</div>
+                       
+                       
+            <table class="table table-dark" style="width: 301px; table-layout: fixed;" border="2">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 221px;">Id ticket</th>
+                        <th scope="col" style="width: 145px;">Nombre</th>
+                        <th scope="col" style="width: 145px;">Apellido </th>
+                        <th scope="col" style="width: 145px;">Email</th>
+                        <th scope="col" style="width: 145px;">Cantidad</th>
+                        <th scope="col" style="width: 145px;">Categoria</th>
+                        <th scope="col" style="width: 145px;">Total</th>
+                        </tr>
+                        </thead>
+           
+
+
+             <tbody th:each="tic:${tickets}">
+
+                 <th  style="width: 221px;" scope="row" th:text="${tic.id}"></th>
+                <td style="width: 145px;" scope="row" th:text="${tic.nombre}"></td>
+                <td style="width: 145px;" th:text="${tic.apellido}" ></td>
+                <td  style="width: 145px;" th:text="${tic.email}" ></td>
+                <td style="width: 145px;" th:text="${tic.cantidad}" ></td>
+                <td style="width: 145px;" th:text="${tic.categoria}" ></td>
+                <td style="width: 145px;" th:text="${tic.total}" ></td>
+                <td>
+
+
+
+               </tbody>
+               
+               </div>    
+                <div class="col-1"></div>
+
+             </section>     
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+</html>

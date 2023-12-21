@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html xmlns:th="htpp//www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+          crossorigin="anonymous">
+          <link rel="stylesheet" href="Est.css">
+    <title>Compra Ticket</title>
+</head>
+<body>
+    <div>
+    <nav class="gris">
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1">
+        <img id="logo"  src="Logo.png" alt="">
+    </div>
+    <div class="col-2" id="white"> Conferencia Bs As</div>
+    
+    <div class="col-8">
+    <ul  class="menu">
+   
+        <li><p>La conferencia</p></li>
+        <li><a href="/ListadoOradores" class="blanco">Los oradores</a></li>
+        <li><a href="#" class="blanco">El lugar y la fecha</a></li>
+        <li><a href="/"class="blanco" >Conviertete en Orador</a></li>
+        <li><a href="/Listadotickets" class="btn active" id="blanco" >Ver Tickets</a></li>
+        </ul>
+    </div>
+    <div class="cuadrados">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+            <div class="cuadro2">
+                <H4>Estudiante</H4>
+                <p>Tienen un descuento</p>
+                <h4>80%</h4>
+                <p>*Presentar documentacion</p>
+            </div>
+            <div class="cuadro2">
+                <h4>Trainee</h4>
+                <p>Tienen un descuento</p>
+                <h4>50%</h4>
+                <p>*Presentar documentacion</p>
+            </div>
+            <div class="cuadro2" id="naranja">
+                <h4>Junior</h4>
+                <p>Tienen un descuento</p>
+                <h4>15%</h4>
+                <p>*Presentar documentacion</p>
+            </div>
+        </div>
+        <div class="col-3"></div>
+
+        </div>
+
+        </div> 
+        <h6>VENTA</h6>
+        <p id="venta">VENTA</p>
+        <H1>VALOR DE TICKET $200</H1>
+        <br>
+        <br>
+        <br>
+        <form th:action="@{/guardarticket}" method="POST" >
+         <section onsubmit=" return calcular()">
+        <div class="container2">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="linea">
+               <input type="text" name="nombre" class="place2" placeholder="Nombre" >
+               <input type="text" name="apellido" class="place2" placeholder="Apellido" >
+            </div>
+            </div>
+            <div class="col-3"></div>
+            </div>
+            <br>
+
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div > <input type="text" name="email" class="place2" placeholder="Correo" id="correo"></div>
+
+
+
+                 </div>
+
+            </div>
+
+
+            </div>
+            <br>
+
+            <div class="conteiner">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-3">Cantidad</div>
+                    <div class="col-3">Categoria</div>
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+                 </div>
+             </div>
+            <div class="container2">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="linea">
+                   <input type="Integer"  name="cantidad" class="place2" id="Cantidad">
+                   <select name="categoria"   class="place2" id="prueba">
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                    <option value="4">Sin Descuento</option>
+                </select>
+
+                </div>
+                <br>
+
+                <div class="col-3"></div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="container2">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                <div class="Total"><strong><p>Total a pagar:$<p id="respuesta"></p> </p></strong>
+                    
+            </div>
+        </div>
+        <div class="col-3"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+                <div class="container2">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <div class="verde2">
+
+                               <button class="place2" id="verde2" onclick="borrar()">Borrar</button>
+                                 <button class="place2" id="verde2" onclick="calcular()">Resumen</button>
+
+                    
+                          <br>
+                         </div>   
+                            
+                    </div>
+                    </div>
+                    <div class="col-3"></div>
+                    </div>
+        
+
+       < !--  </section>-->
+            <div class="container2">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <div class="verde2">
+            <div > <input class="button btn btn-success " type="submit" id="boton2"></div>
+            
+            </div>
+                   <div class="col-3"></div>         
+                </Form>
+
+        <br>
+
+         <footer>
+        <section class="piedepagina">
+          <div class="azul">
+            <div class="conteiner">
+      <ul class="menu" id="pie">
+        <li><a href="#" class="blanco" id="a">Preguntas<br>frecuentes</a></li>
+        <li><a href="#" class="blanco" id="a">Contactanos</a></li>
+        <li><a href="#" class="blanco" id="a">Prensa</a></li>
+        <li><a href="#" class="blanco" id="a">Conferencia</a></li>
+        <li><a href="#" class="blanco" id="a">Terminos <br> y condiciones</a></li>
+        <li><a href="#" class="blanco" id="a">Privacidad</a></li>
+        <li><a href="#" class="blanco" id="a">Estudiantes</a></li>
+      
+      </ul>
+      
+      
+      
+      
+      
+            </div>
+          </div>
+      
+      
+        </section>
+      
+      </footer>
+      <script>
+    
+        
+
+
+function calcular()
+{
+   
+    var p=document.getElementById("prueba").value;
+ 
+    var cantidad=document.getElementById("Cantidad").value;
+
+    
+    switch(p){
+      
+        case "1":
+            descunitario=200*80/100
+           
+
+
+        break;
+
+        case "2":
+            descunitario=200*50/100
+            
+        break;
+
+
+
+        case "3":
+        descunitario=200*15/100
+        
+        break;
+
+
+        case "4":
+        descunitario=0;
+      
+        break;
+
+
+
+
+    }
+
+       
+
+        var precio=200-descunitario;
+        
+        var pagar=precio*cantidad;
+       
+
+        var respuesta=document.getElementById("respuesta");
+           respuesta.innerHTML = pagar;
+
+
+
+    return (false);
+
+}
+      </script>
+ 
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        
+      </body>
+      
+</html>

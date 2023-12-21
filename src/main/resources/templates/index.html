@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns:th="htpp//www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+          crossorigin="anonymous">
+          <link rel="stylesheet" href="Est.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+    <nav class="gris">
+        <div class="cont">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1">
+        <img id="logo"  src="Logo.png" alt="">
+    </div>
+    <div class="col-2" id="white"> Conferencia Bs As</div>
+    
+    <div class="col-8">
+    <ul  class="menu">
+   
+        <li><p>La conferencia</p></li>
+        <li><a href="/ListadoOradores" class="blanco">Los oradores</a></li>
+        <li><a href="#" class="blanco">El lugar y la fecha</a></li>
+        <li><a href="#"class="blanco" >Conviertete en Orador</a></li>
+        <li><a href="/Comprarticket" id="verde">Comprar tickets</a></li>
+        </ul>
+
+    </div>
+   
+    </div>
+</div>
+    
+    </nav>
+    <header>
+      <section class="imagen">
+    <div id="carouselExample" class="carousel slide">
+      
+        <div class="carousel-inner">
+       
+          <div class="carousel-item active">
+            <img src="Carrusel1.jpg" class="d-block w-100 h-100"  alt="..." >
+       
+          </div>
+        
+          <div class="carousel-item">
+            <img src= "Carrusel2.jpg" class="d-block w-100 h-100" alt="...">
+          
+          </div>
+          <div class="carousel-item">
+            <img src="Carrusel3.jpg"  class="d-block w-100 h-100" alt="...">
+            
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="bloque" id="dentro">
+        <h4>Config Bs As</h4>
+         <p><strong>Bs As llega por primera vez a Argentina. Un eveto para compartir con nuestra comunidad el conocimiento
+           y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, 
+          a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</strong></p>
+          <a href="#" class="btn active" id="blanco">Quiero ser orador</a>
+          <a href="/Comprarticket" class="btn btn-success" id="verde2">Comprar tickets</a>
+
+        </div>
+      </section>
+        
+      </div>
+      <h6 aling-center>CONOCE A LOS ORADORES</h6>
+      <h1>ORADORES</h1>
+<section>
+      <div class="contenedor">
+         <div class="Tarjetas">  
+      <div class="card" style="width: 18rem;">
+        <img src="Steve Jobs.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <a href="#" class="btn btn-warning">JavaScript</a>
+            <a href="#" class="btn btn-primary">React</a>
+          <h5 class="card-title">STEVE JOBS</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        </div>
+    </div>
+      <div class="Tarjetas">
+      <div class="card" style="width: 18rem;">
+        <img src="Bill Gates.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <a href="#" class="btn btn-warning">JavaScript</a>
+            <a href="#" class="btn btn-primary">React</a>
+          <h5 class="card-title">BILL GATES</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        </div>
+    </div>
+      <div class="Tarjetas">
+      <div class="card" style="width: 18rem;">
+        <img src="Ada Lovelache.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <a href="#" class="btn btn-secondary">Negocios</a>
+            <a href="#" class="btn btn-danger">Startups</a>
+          <h5 class="card-title">ADA LOVELACHE</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div>
+    </div>
+  </div>
+</section>
+<section>
+    <div  class="conteiner2">
+     <div  class="row">
+      <div class="col-6">
+          <img class="playa" src="Playa.jpg" alt="">
+        </div>
+      
+      
+        <div class="col-6">
+        <div class="playa" id="cuadro">
+        
+          <div>
+          <h5 id="blanco">Bs As-Octubre</h5>
+        </div>
+        <p id="blanco">Buenos Aires es la provincia y localidad más grande del estado de Argentina,
+           en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades estadounidenses.
+            Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, 
+            la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad
+             aproximadamente 600 km2 de superficie.</p>
+             <div>
+          <a href="#" class="btn active" id="blanco">Conoce mas</a>
+        </div>
+        </div>
+
+    </div>
+  </section>
+  <div>
+  <h6>CONVIERTETE EN UN </h6>
+  <H1>ORADOR</H1>
+  <P id="p"><strong>Anotate como orador para dar una charla ignite.Cuentanos de que quieres hablar</strong></P>
+</div>
+<section class="form-centrar">
+  <form th:action="@{/registrar}" method="POST" class="form">
+<div class="recuadro">
+  <input type="text"  name="nombre" placeholder="Nombre" class=" place">
+  <input type="text"  name="apellido" placeholder="Apellido" class=" place">
+   </div>
+   <div>
+  <input type="text"  name="email" placeholder="email" id="correo2" class=" place">
+</div>
+      
+<div class="recuadro-texto">
+  <input type="text"  name="tema" placeholder="Sobre que quieres hablar?" class=" placeholder2">
+
+</div>
+<div><p id="Recordatorio">Recuerda incluir un titulo para tu charla</p></div>
+
+
+  <div > <input class="button btn btn-success " type="submit" id="boton"></div>
+</div>
+</form>
+</section>
+<footer>
+  <section class="piedepagina">
+    <div class="azul">
+      <div class="conteiner">
+<ul class="menu" id="pie">
+  <li><a href="#" class="blanco" id="a">Preguntas<br>frecuentes</a></li>
+  <li><a href="#" class="blanco" id="a">Contactanos</a></li>
+  <li><a href="#" class="blanco" id="a">Prensa</a></li>
+  <li><a href="#" class="blanco" id="a">Conferencia</a></li>
+  <li><a href="#" class="blanco" id="a">Terminos <br> y condiciones</a></li>
+  <li><a href="#" class="blanco" id="a">Privacidad</a></li>
+  <li><a href="#" class="blanco" id="a">Estudiantes</a></li>
+
+</ul>
+
+
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+</footer>
+    </header>
+    
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

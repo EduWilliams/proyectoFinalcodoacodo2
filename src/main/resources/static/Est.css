@@ -1,0 +1,356 @@
+*{
+
+    padding: 0%;
+    margin: 0%;
+    max-width: 1345px;
+   
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+
+.gris{
+   
+    background-color: rgb(83, 81, 81);
+    height: 80PX;
+    width: 100%;
+
+    
+  
+}
+#logo{
+
+    height: 70px;
+    width: 70px;
+  padding: 14px;
+
+}
+#white{
+    margin-top: 20px;
+    color:white;
+    font-size: 20px;
+}
+
+
+.menu{
+
+    list-style: none;
+    margin-top: 10px;
+    
+}
+.menu li{
+
+    position: relative; 
+    display:inline-block;
+    padding: 17x;
+    margin: 9px;
+    color:white;
+
+}
+.menu li a{
+ 
+    text-decoration: none;
+    color: white;
+
+}
+.blanco:hover{
+
+    color: rgb(163, 156, 156);
+}
+
+
+#verde{
+
+    color:rgb(90, 165, 90);
+   
+}
+
+
+
+header{
+    border: none;
+   
+
+}
+.imagen #dentro{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 60%;
+    left: 60%;
+color:white
+
+}
+a:hover{
+
+    background-color: white;
+
+
+}
+
+
+#verde2{
+
+    color: white;
+}
+
+
+h6{
+    margin-top: 30PX;
+    padding: 5PX;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    border-top: 0;
+    display: flex;
+    justify-content: center;
+}
+.Tarjetas {
+float:left;
+padding: 15px;
+
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+
+ .playa{
+    height: 400px;
+    width: 672px;
+    float:left;
+}
+ #cuadro{
+
+    height: 400px;
+    width: 660px;
+    background-color: rgb(83, 81, 81);
+
+}
+#blanco{
+
+    margin: 15px;
+    color:white;
+}
+
+
+.p{
+    display: flex;
+    justify-content: center;
+}
+
+
+#p{
+    display: flex;
+    justify-content: center;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.place{
+    margin-top: 0%;
+    height: 40px;
+    width: 350px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+   
+}
+.placeholder2{
+    margin-top: 0%;
+    height: 160px;
+    width: 732px;
+    border-radius: 5px;
+    margin: 15px;
+    background-color: white;
+   
+}
+#Recordatorio{
+    margin: 15px;
+    margin-top: 0%;
+   
+
+}
+#boton{
+    margin-top: 0%;
+    background-color: rgb(75, 122, 5);
+    height: 40px;
+    width: 732px;
+    border-radius: 5px;
+    margin: 15px;
+   
+}
+input::placeholder{
+    margin-top: 0;
+    margin: 15px;
+    padding: 15px;
+
+align-items: self-start;
+}
+.azul{
+
+ background-color: rgb(37, 37, 95);
+    height: 100PX;
+    width: 100%;
+
+}
+#pie{
+    margin-bottom: 80px;
+ 
+}
+
+
+#a{
+    margin-top: 20px;
+    margin: 40px;
+    align-items:center
+  
+}
+.Cuadrados{
+
+ float: left;
+}
+
+.cuadro2{
+
+    height: 200px;
+    width: 200px;
+    background-color:white;
+    margin:5px;
+   border-width: 2px;
+    border-color:rgb(79, 122, 201);
+    border-style: solid;
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#naranja{
+
+    border-color: orange;
+}
+
+h4{
+
+margin-top: 25px;
+
+}
+
+
+#f{
+    float: left;
+width: 309px;
+margin: 12px;
+margin-left: 0px;
+
+}
+
+#venta{
+    display: flex;
+    justify-content: center;
+}
+.linea{
+    float: left;
+}
+.place2{
+margin-top: 0%;
+height: 40px;
+width: 309px;
+border-width: 1px;
+
+
+border-radius: 5px;
+background-color: white;
+}
+#correo{
+    border-width: 1px;
+
+width: 622px;
+
+}
+.Total{
+    width: 622px;
+    height: 50px;
+    background-color: rgb(202, 226, 226);
+    color: rgb(29, 29, 87);
+    border-radius: 5px;
+    justify-content: center;
+}
+.Total p {
+
+padding: 15px;
+
+float: left;
+
+}
+
+
+
+#respuesta {
+
+margin-left: 350px;
+
+}
+#Cantidad{
+
+    padding: 15px;
+
+}
+    #verde2{
+
+        background-color: rgb(114, 158, 48);
+        justify-content: center;
+        color: white;
+        border-width: 0px;
+    }
+    #correo2{
+        
+         margin-top: 0%;
+    height: 40px;
+    width: 730px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: center;
+        
+    }
+
+    #boton2 {
+        
+     
+    margin-top: 0%;
+    background-color: rgb(75, 122, 5);
+    height: 40px;
+    width: 620px;
+    border-radius: 5px;
+   border-width: 1px;
+}  
+#Lista{
+    height: 40px;
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}    
+.Listar{
+    
+   text-align: center;
+     width:100%;
+}
+
+
+
+        
+    
